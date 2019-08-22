@@ -4,10 +4,14 @@ export default function Nav() {
   return (
     <Fragment>
       <div>
-        <nav class="navbar" role="navigation" aria-label="main navigation">
+        <nav
+          class="navbar is-fixed-top"
+          role="navigation"
+          aria-label="main navigation"
+        >
           <div class="navbar-brand">
-            <a class="navbar-item" href="#">
-              SNOEPJE
+            <a class="navbar-item brand-title" href="#">
+              SNOEPje
             </a>
 
             <a
@@ -27,14 +31,15 @@ export default function Nav() {
             <div class="navbar-start">
               <a class="navbar-item">Home</a>
               <a class="navbar-item">About</a>
+              <a class="navbar-item">Shop</a>
             </div>
           </div>
 
           <div class="navbar-end">
             <div class="navbar-item">
               <div class="buttons">
-                <a class="button is-danger">
-                  <strong>My Cart</strong>
+                <a class="button is-danger is-rounded is-outlined">
+                  <i class="fas fa-shopping-cart" />
                 </a>
               </div>
             </div>

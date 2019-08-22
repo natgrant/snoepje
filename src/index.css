@@ -1,5 +1,17 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald|Playfair+Display|Roboto&display=swap");
+
 .landing-page {
   background-image: url("./images/chai.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.brand-title {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+}
+
+.shop-title {
+  margin: 3rem;
+  font-family: "Oswald", sans-serif;
 }

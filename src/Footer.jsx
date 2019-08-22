@@ -6,7 +6,7 @@ export default function Footer() {
       <footer class="footer">
         <div class="content has-text-centered">
           <p>
-            <strong>SNOEPJE</strong>
+            <strong>SNOEPje</strong>
           </p>
         </div>
       </footer>
