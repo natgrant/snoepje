@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from "react";
 import Nav from "./Nav";
+import Footer from "./Footer";
 
 export default class Home extends Component {
   render() {
@@ -11,6 +12,11 @@ export default class Home extends Component {
             <div class="container" />
           </div>
         </section>
+        <div class="columns">
+          <div class="column">First column</div>
+          <div class="column">Second column</div>
+        </div>
+        <Footer />
       </Fragment>
     );
   }
