@@ -29,6 +29,16 @@ export default function Nav() {
               <a class="navbar-item">About</a>
             </div>
           </div>
+
+          <div class="navbar-end">
+            <div class="navbar-item">
+              <div class="buttons">
+                <a class="button is-danger">
+                  <strong>My Cart</strong>
+                </a>
+              </div>
+            </div>
+          </div>
         </nav>
       </div>
     </Fragment>
