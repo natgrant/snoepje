@@ -21,5 +21,10 @@
 }
 
 .product-image {
-  margin: 2rem;
+  margin: 3rem;
+}
+
+.product-name {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
 }

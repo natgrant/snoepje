@@ -15,22 +15,28 @@ export default class Home extends Component {
         <div className="product-header">
           <h2 className="title has-text-centered shop-title">SHOP NOW</h2>
         </div>
-        <div className="columns">
+        <div className="columns is-centered is-vcentered">
           <div className="column has-text-centered">
-            <figure className="image product-image is-inline-block is-256x256">
+            <figure className="image product-image is-inline-block">
               <img
                 alt="turmeric chai"
                 src="https://img.taste.com.au/PSoW8I3U/taste/2017/05/golden-turmeric-chai-latte1980x1320-127032-1.jpg"
               />
             </figure>
+            <h3 className="product-name" onClick="#">
+              Turmeric Chai with Coconut Mylk
+            </h3>
           </div>
           <div className="column has-text-centered">
-            <figure className="image product-image is-inline-block is-256-256">
+            <figure className="image product-image is-inline-block">
               <img
                 alt="turmeric chai"
-                src="https://img.taste.com.au/PSoW8I3U/taste/2017/05/golden-turmeric-chai-latte1980x1320-127032-1.jpg"
+                src="https://images.unsplash.com/photo-1459933083533-46381576caa9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80"
               />
             </figure>
+            <h3 className="product-name" onClick="#">
+              Turmeric Chai with Almond Mylk
+            </h3>
           </div>
         </div>
         <Footer />
