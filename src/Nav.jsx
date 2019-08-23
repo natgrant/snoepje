@@ -5,18 +5,18 @@ export default function Nav() {
     <Fragment>
       <div>
         <nav
-          class="navbar is-fixed-top"
+          className="navbar is-fixed-top"
           role="navigation"
           aria-label="main navigation"
         >
-          <div class="navbar-brand">
-            <a class="navbar-item brand-title" href="#">
+          <div className="navbar-brand">
+            <a className="navbar-item brand-title" href="#">
               SNOEPje
             </a>
 
             <a
               role="button"
-              class="navbar-burger burger"
+              className="navbar-burger burger"
               aria-label="menu"
               aria-expanded="false"
               data-target="navbarBasicExample"
@@ -27,19 +27,19 @@ export default function Nav() {
             </a>
           </div>
 
-          <div class="navbar-menu">
-            <div class="navbar-start">
-              <a class="navbar-item">Home</a>
-              <a class="navbar-item">About</a>
-              <a class="navbar-item">Shop</a>
+          <div className="navbar-menu">
+            <div className="navbar-start">
+              <a className="navbar-item">Home</a>
+              <a className="navbar-item">About</a>
+              <a className="navbar-item">Shop</a>
             </div>
           </div>
 
-          <div class="navbar-end">
-            <div class="navbar-item">
-              <div class="buttons">
-                <a class="button is-danger is-rounded is-outlined">
-                  <i class="fas fa-shopping-cart" />
+          <div className="navbar-end">
+            <div className="navbar-item">
+              <div className="buttons">
+                <a className="button is-danger is-rounded is-outlined">
+                  <i className="fas fa-shopping-cart" />
                 </a>
               </div>
             </div>
