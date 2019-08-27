@@ -32,10 +32,8 @@ export default class Home extends Component {
             </div>
           </div>
           <div className="column container">
-            <div className="product-desc">
-              <p>
-                <strong>HEALING TURMERIC CHAI</strong>
-              </p>
+            <div className="product-desc has-text-left">
+              <p className="product-title">HEALING TURMERIC CHAI</p>
               <p>
                 For those days where you need a wee pick-me-up, this turmeric
                 and giner infused chai is sure to hit the spot{" "}
@@ -46,9 +44,7 @@ export default class Home extends Component {
         <div className="columns is-centered is-vcentered">
           <div className="column container">
             <div className="product-desc has-text-right">
-              <p>
-                <strong>GUT LOVE KOMBUCHA</strong>
-              </p>
+              <p className="product-title">GUT LOVE KOMBUCHA</p>
               <p>
                 Loaded with probiotics, our kombucha is made with blends of
                 green and black tea, making it a delicious drink to enjoy and
