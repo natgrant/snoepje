@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from "react";
-import Footer from "./Footer";
+
 import Header from "./Header";
 
 export default class Home extends Component {
@@ -21,7 +21,12 @@ export default class Home extends Component {
               />
             </figure>
             <div className="middle">
-              <h3 className="product-name text" onClick="#">
+              <h3
+                className="product-name text"
+                onClick={() => {
+                  window.location.hash = `#/shop`;
+                }}
+              >
                 SHOP CHAI NOW
               </h3>
             </div>
@@ -55,13 +60,17 @@ export default class Home extends Component {
               />
             </figure>
             <div className="middle">
-              <h3 className="product-name text" onClick="#">
+              <h3
+                className="product-name text"
+                onClick={() => {
+                  window.location.hash = `#/shop`;
+                }}
+              >
                 SHOP BOOCH NOW
               </h3>
             </div>
           </div>
         </div>
-        <Footer />
       </Fragment>
     );
   }

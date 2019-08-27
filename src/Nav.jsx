@@ -32,10 +32,12 @@ export default function Nav() {
               <a className="navbar-item" href="#/">
                 Home
               </a>
+              <a className="navbar-item" href="#/shop">
+                Shop
+              </a>
               <a className="navbar-item" href="#/about">
                 About Us
               </a>
-              <a className="navbar-item">Shop</a>
             </div>
           </div>
 
@@ -43,7 +45,7 @@ export default function Nav() {
             <div className="navbar-item">
               <div className="buttons">
                 <a className="button is-danger is-rounded is-outlined">
-                  <i className="fas fa-shopping-cart" />
+                  My Cart
                 </a>
               </div>
             </div>
