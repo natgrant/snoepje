@@ -6,7 +6,7 @@ export default function Footer() {
       <footer className="footer">
         <div className="content has-text-centered footer-title">
           <p>
-            <strong>SNOEPje</strong>
+            <strong>SNOEPje</strong> drink happiness
           </p>
         </div>
       </footer>

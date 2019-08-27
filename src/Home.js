@@ -1,17 +1,12 @@
 import React, { Component, Fragment } from "react";
-import Nav from "./Nav";
 import Footer from "./Footer";
+import Header from "./Header";
 
 export default class Home extends Component {
   render() {
     return (
       <Fragment>
-        <Nav />
-        <section className="hero is-large landing-page">
-          <div className="hero-body">
-            <div className="container" />
-          </div>
-        </section>
+        <Header />
         <div className="product-header">
           <h2 className="title has-text-centered shop-title">
             WHAT'S IN STORE
@@ -27,7 +22,7 @@ export default class Home extends Component {
             </figure>
             <div className="middle">
               <h3 className="product-name text" onClick="#">
-                SHOP NOW
+                SHOP CHAI NOW
               </h3>
             </div>
           </div>
@@ -61,7 +56,7 @@ export default class Home extends Component {
             </figure>
             <div className="middle">
               <h3 className="product-name text" onClick="#">
-                SHOP NOW
+                SHOP BOOCH NOW
               </h3>
             </div>
           </div>

@@ -10,7 +10,7 @@ export default function Nav() {
           aria-label="main navigation"
         >
           <div className="navbar-brand">
-            <a className="navbar-item brand-title" href="#">
+            <a className="navbar-item brand-title" href="#/">
               SNOEPje
             </a>
 
@@ -29,8 +29,12 @@ export default function Nav() {
 
           <div className="navbar-menu">
             <div className="navbar-start">
-              <a className="navbar-item">Home</a>
-              <a className="navbar-item">About</a>
+              <a className="navbar-item" href="#/">
+                Home
+              </a>
+              <a className="navbar-item" href="#/about">
+                About Us
+              </a>
               <a className="navbar-item">Shop</a>
             </div>
           </div>

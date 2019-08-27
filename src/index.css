@@ -74,9 +74,16 @@ body {
 .product-desc {
   font-family: "Playfair Display", serif;
   margin: 6rem;
+  color: #312f30;
 }
 
 .product-title {
   font-family: "Oswald", sans-serif;
   font-size: 1.5rem;
+  color: #312f30;
+}
+
+.about-container {
+  margin-top: 3rem;
+  background-color: #ffffff;
 }
