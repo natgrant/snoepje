@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Oswald|Playfair+Display|Roboto&display=swap");
 
+html,
+body {
+  width: 100%;
+  background-color: #f7edf0;
+}
+
 .landing-page {
   background-image: url("./images/chai.jpg");
   background-repeat: no-repeat;
@@ -21,9 +27,10 @@
 }
 
 .product-image {
-  margin: 3rem;
-  max-width: 100%;
   height: auto;
+  width: auto;
+  max-width: 645px;
+  max-height: 645px;
 }
 
 .product-name {
@@ -58,8 +65,13 @@
 }
 
 .text {
-  background-color: #f7dcd7;
+  background-color: #f7edf0;
   color: #3f4e63;
   font-size: 16px;
   padding: 16px 32px;
+}
+
+.product-desc {
+  font-family: "Playfair Display", serif;
+  margin: 4rem;
 }
