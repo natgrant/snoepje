@@ -31,19 +31,17 @@ body {
   width: auto;
   max-width: 645px;
   max-height: 645px;
-}
-
-.product-name {
-  font-family: "Oswald", sans-serif;
-  text-transform: uppercase;
-}
-.image {
   opacity: 1;
   display: block;
   width: 100%;
   height: auto;
   transition: 0.5s ease;
   backface-visibility: hidden;
+}
+
+.product-name {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
 }
 
 .middle {
@@ -56,7 +54,7 @@ body {
   -ms-transform: translate(-50%, -50%);
 }
 
-.container:hover .image {
+.container:hover .product-image {
   opacity: 0.3;
 }
 
@@ -92,4 +90,10 @@ body {
 .about-text {
   font-family: "Playfair Display", serif;
   padding: 3rem;
+}
+
+.shop-header {
+  background-color: white;
+  margin-bottom: 2.5rem;
+  font-size: 2rem;
 }
