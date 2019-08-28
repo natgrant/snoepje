@@ -10,7 +10,7 @@ export default function Nav() {
           aria-label="main navigation"
         >
           <div className="navbar-brand">
-            <a className="navbar-item brand-title" href="#/">
+            <a className="navbar-item brand-title" id="brand-link" href="#/">
               SNOEPje
             </a>
 

@@ -17,6 +17,18 @@ body {
   font-size: 2rem;
 }
 
+#brand-link {
+  color: #4c4c4c;
+}
+
+#brand-link:hover {
+  color: #eea1a0;
+}
+
+.navbar-item:hover {
+  color: #eea1a0 !important;
+}
+
 .footer-title {
   font-family: "Playfair Display", serif;
 }
@@ -96,4 +108,14 @@ body {
   background-color: white;
   margin-bottom: 2.5rem;
   font-size: 2rem;
+}
+
+.form-container {
+  margin: 4rem;
+  /* background-color: white; */
+  /* height: auto;
+  width: auto; */
+  /* max-width: 645px;
+  max-height: 645px;
+  padding: 6rem; */
 }

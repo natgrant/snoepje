@@ -1,5 +1,7 @@
 import React, { Fragment } from "react";
 
+import AddToCart from "./AddToCart";
+
 export default function Shop() {
   return (
     <Fragment>
@@ -28,10 +30,14 @@ export default function Shop() {
             </div>
           </div>
         </div>
-        <div className="column container" />
+        <div className="column container">
+          <AddToCart />
+        </div>
       </div>
       <div className="columns is-centered is-vcentered">
-        <div className="column container" />
+        <div className="column container">
+          <AddToCart />
+        </div>
         <div className="column has-text-centered  container">
           <figure className="image product-image is-inline-block">
             <img
