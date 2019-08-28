@@ -119,3 +119,13 @@ body {
   max-height: 645px;
   padding: 6rem; */
 }
+
+.field-button {
+  width: 200px;
+  font-family: "Oswald", sans-serif;
+  font-size: 2em;
+}
+
+.input-field {
+  width: 142px !important;
+}

@@ -8,7 +8,7 @@ export default function AddToCart() {
           <h2 className="product-title">TURMERIC CHAI</h2>
         </div>
         <form>
-          <div class="field field-size">
+          <div class="field field-button">
             <div class="control">
               <div class="select">
                 <select>
@@ -19,7 +19,7 @@ export default function AddToCart() {
               </div>
             </div>
           </div>
-          <div class="field">
+          <div class="field field-button">
             <div class="control">
               <div class="select">
                 <select>
@@ -30,7 +30,7 @@ export default function AddToCart() {
               </div>
             </div>
           </div>
-          <div class="field">
+          <div class="field input-field">
             <div class="control">
               <div>
                 <input
@@ -43,9 +43,11 @@ export default function AddToCart() {
               </div>
             </div>
           </div>
-          <div class="field">
+          <div class="field field-button">
             <div class="control">
-              <button class="button is-danger is-rounded">Add to Cart</button>
+              <button class="button is-danger is-rounded is-medium">
+                Add to Cart
+              </button>
             </div>
           </div>
         </form>
