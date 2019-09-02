@@ -5,49 +5,30 @@ export default function AddToCart() {
     <Fragment>
       <div class="container form-container">
         <div className="title">
-          <h2 className="product-title">TURMERIC CHAI</h2>
+          <h2 className="product-title">
+            TURMERIC CHAI W/ COCONUT MYLK | 250ML
+          </h2>
+          <p className="price">$4.99</p>
         </div>
+        <div className="prod-desc">
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error
+            officiis voluptas exercitationem ipsa culpa a iure. Minima, maxime.
+            Quos animi expedita aperiam corrupti modi error obcaecati suscipit
+            praesentium, exercitationem possimus.
+          </p>
+        </div>
+        <p class="stock in-stock">In stock</p>
         <form>
-          <div class="field field-button">
-            <div class="control">
-              <div class="select">
-                <select>
-                  <option className="is-muted">Which Mylk?</option>
-                  <option>Coconut</option>
-                  <option>Almond</option>
-                </select>
-              </div>
-            </div>
-          </div>
-          <div class="field field-button">
-            <div class="control">
-              <div class="select">
-                <select>
-                  <option>Choose Size</option>
-                  <option>250ml</option>
-                  <option>500ml</option>
-                </select>
-              </div>
-            </div>
-          </div>
-          <div class="field input-field">
+          <div class="field input-field is-grouped">
             <div class="control">
               <div>
-                <input
-                  class="input"
-                  type="number"
-                  min="1"
-                  max="5"
-                  placeholder="Quantity"
-                />
+                <input class="input" type="number" min="1" max="5" value="1" />
               </div>
             </div>
-          </div>
-          <div class="field field-button">
+
             <div class="control">
-              <button class="button is-danger is-rounded is-medium">
-                Add to Cart
-              </button>
+              <button class="button is-danger">Add to Cart</button>
             </div>
           </div>
         </form>
