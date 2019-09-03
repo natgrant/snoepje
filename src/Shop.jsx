@@ -5,7 +5,7 @@ import AddToCart from "./AddToCart";
 export default function Shop() {
   return (
     <Fragment>
-      <section class="hero shop-header">
+      <section className="hero shop-header">
         <div className="product-header hero-body">
           <div className="container">
             <h2 className="title has-text-centered shop-title">THE RANGE</h2>

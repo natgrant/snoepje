@@ -1,9 +1,16 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useState } from "react";
 
-export default function AddToCart() {
+const AddToCart = () => {
+  const [item, setItem] = useState(1);
+
+  const handleSubmit = e => {
+    e.preventDefault();
+    console.log(item);
+  };
+
   return (
     <Fragment>
-      <div class="container form-container">
+      <div className="container form-container">
         <div className="title">
           <h2 className="product-title">
             TURMERIC CHAI W/ COCONUT MYLK | 250ML
@@ -18,21 +25,32 @@ export default function AddToCart() {
             praesentium, exercitationem possimus.
           </p>
         </div>
-        <p class="stock in-stock">In stock</p>
-        <form>
-          <div class="field input-field is-grouped">
-            <div class="control">
+        <p className="stock in-stock">In stock</p>
+        <form onSubmit={handleSubmit}>
+          <div className="field input-field is-grouped">
+            <div className="control">
               <div>
-                <input class="input" type="number" min="1" max="5" value="1" />
+                <input
+                  className="input"
+                  type="number"
+                  min="1"
+                  max="5"
+                  value={item}
+                  onChange={e => setItem(e.target.value)}
+                />
               </div>
             </div>
 
-            <div class="control">
-              <button class="button is-danger">Add to Cart</button>
+            <div className="control">
+              <button className="button is-danger" type="submit">
+                Add to Cart
+              </button>
             </div>
           </div>
         </form>
       </div>
     </Fragment>
   );
-}
+};
+
+export default AddToCart;
