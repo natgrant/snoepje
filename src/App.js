@@ -5,8 +5,8 @@ import { HashRouter as Router, Route } from "react-router-dom";
 import Home from "./Home";
 import About from "./About";
 import Shop from "./Shop";
-import Nav from "./Nav";
-import Footer from "./Footer";
+import Nav from "./components/layout/Nav";
+import Footer from "./components/layout/Footer";
 
 function App() {
   return (
