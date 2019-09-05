@@ -4,15 +4,30 @@ import { connect } from "react-redux";
 import ListItem from "./ListItem";
 import { addToCart } from "../../store/actions";
 
-const ProductList = ({ products }) => {
+const ProductList = props => {
+  console.log("product list", props);
   return (
     <Fragment>
-      {products &&
-        products.map(product => {
-          return <ListItem product={product} key={product.id} />;
+      {props.products &&
+        props.products.map(product => {
+          return (
+            <Fragment>
+              <ListItem
+                product={product}
+                key={product.id}
+                props={props.addToCart}
+              />
+            </Fragment>
+          );
         })}
     </Fragment>
   );
+};
+
+const mapStateToProps = state => {
+  return {
+    product: state.product
+  };
 };
 
 const mapDispatchToProps = dispatch => {
@@ -24,6 +39,6 @@ const mapDispatchToProps = dispatch => {
 };
 
 export default connect(
-  null,
+  mapStateToProps,
   mapDispatchToProps
 )(ProductList);

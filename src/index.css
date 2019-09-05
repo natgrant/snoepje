@@ -140,3 +140,14 @@ body {
 .in-stock {
   margin: 10px 0px 10px 0px;
 }
+
+.flex-row-container {
+  display: flex;
+  flex-wrap: wrap;
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+.flex-row-container > .flex-row-item {
+  flex-grow: 1;
+  flex: 1 1 40%;
+}
