@@ -91,6 +91,7 @@ body {
   font-family: "Oswald", sans-serif;
   font-size: 1.5rem;
   color: #312f30;
+  text-transform: uppercase;
 }
 
 .about-container {
