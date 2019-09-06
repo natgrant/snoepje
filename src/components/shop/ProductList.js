@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 import { connect } from "react-redux";
 
 import ListItem from "./ListItem";
-import { addToCart } from "../../store/actions";
+import { addToCart, navigate } from "../../store/actions";
 
 const ProductList = props => {
   console.log("product list", props);
@@ -15,7 +15,7 @@ const ProductList = props => {
               <ListItem
                 product={product}
                 key={product.id}
-                props={props.addToCart}
+                addToCart={props.addToCart}
               />
             </Fragment>
           );
@@ -34,6 +34,7 @@ const mapDispatchToProps = dispatch => {
   return {
     addToCart: id => {
       dispatch(addToCart(id));
+      dispatch(navigate("cart"));
     }
   };
 };

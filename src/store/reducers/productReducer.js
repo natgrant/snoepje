@@ -30,7 +30,10 @@ const initState = {
 };
 
 const productReducer = (state = initState, action) => {
-  return state;
+  switch (action.type) {
+    default:
+      return state;
+  }
 };
 
 export default productReducer;
