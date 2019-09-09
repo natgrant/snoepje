@@ -1,5 +1,7 @@
 import React, { Fragment, Component } from "react";
 import { connect } from "react-redux";
+import { firestoreConnect } from "react-redux-firebase";
+import { compose } from "redux";
 
 import ProductList from "./ProductList";
 import ShopHeader from "./ShopHeader";
@@ -18,12 +20,20 @@ class Shop extends Component {
   }
 }
 const mapStateToProps = state => {
+  console.log(state);
   return {
-    products: state.product.products
+    products: state.firestore.ordered.products
   };
 };
 
-export default connect(
-  mapStateToProps,
-  null
+export default compose(
+  connect(
+    mapStateToProps,
+    null
+  ),
+  firestoreConnect([
+    {
+      collection: "products"
+    }
+  ])
 )(Shop);
