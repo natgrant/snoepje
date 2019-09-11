@@ -1,10 +1,11 @@
 export const ADD_TO_CART = "ADD_TO_CART";
 export const NAVIGATE = "NAVIGATE";
 
-export const addToCart = id => {
+export const addToCart = (id, quantity) => {
   return {
     type: "ADD_TO_CART",
-    id
+    id,
+    quantity
   };
 };
 

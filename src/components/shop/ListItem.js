@@ -1,7 +1,9 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useState } from "react";
 
 const ListItem = props => {
+  const [quantity, setQuantity] = useState(1);
   const product = props.product;
+
   return (
     <Fragment>
       <div className="column has-text-centered container flex-row-item">
@@ -24,7 +26,7 @@ const ListItem = props => {
         </div>
         <div className="prod-desc">
           <p>{product.description}</p>
-          {product.stock === "true" ? (
+          {product.stock === true ? (
             <p className="stock in-stock">In stock</p>
           ) : (
             <p className="stock in-stock">Hold tight! we're out of stock</p>
@@ -38,8 +40,8 @@ const ListItem = props => {
                 type="number"
                 min="1"
                 max="5"
-                value="1"
-                readOnly
+                value={quantity}
+                onChange={e => setQuantity(e.target.value)}
               />
             </div>
           </div>
@@ -47,7 +49,7 @@ const ListItem = props => {
             <button
               href="#"
               className="button is-danger"
-              onClick={() => props.addToCart(product.id)}
+              onClick={() => props.addToCart(product.id, quantity)}
             >
               Add to Cart
             </button>

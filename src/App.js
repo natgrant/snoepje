@@ -8,7 +8,7 @@ import About from "./About";
 import Shop from "./components/shop/Shop";
 import Nav from "./components/layout/Nav";
 import Footer from "./components/layout/Footer";
-import Cart from "./components/cart/Cart";
+// import Cart from "./components/cart/Cart";
 
 const App = props => {
   return (
@@ -17,8 +17,8 @@ const App = props => {
         <Nav />
         <Route exact path="/" component={Home} />
         <Route path="/about" component={About} />
-        {/* <Route path="/shop" component={Shop} /> */}
-        {props.navigate === "listing" ? <Shop /> : <Cart />}
+        <Route path="/shop" component={Shop} />
+        {/* {props.navigate === "listing" ? <Shop /> : <Cart />} */}
         <Footer />
       </Router>
     </Fragment>
